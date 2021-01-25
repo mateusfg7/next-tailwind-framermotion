@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-import Layout from '../components/Layout';
-
 interface CardProps {
   href: string;
   imgSrc: string;
@@ -25,7 +23,7 @@ const Card: React.FC<CardProps> = ({ href, imgSrc, layoutId }) => {
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <h1 className='text-4xl sm:text-6xl lg:text-7xl mt-10 md:mt-24 leading-none font-extrabold tracking-tight text-gray-900'>
         Construa sites modernos com agilidade sem sair do HTML.
       </h1>
@@ -43,6 +41,6 @@ export default function Home() {
           layoutId='framermotion-logo'
         />
       </div>
-    </Layout>
+    </div>
   );
 }
