@@ -31,20 +31,16 @@ export default function Home() {
       </h1>
 
       <div className='grid mt-10 w-full grid-cols-1 grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-1'>
-        <Card
-          href='/nextjs'
-          imgSrc='/img/nextjs.svg'
-          layoutId={'nextjs-logo'}
-        />
+        <Card href='/nextjs' imgSrc='/img/nextjs.svg' layoutId='nextjs-logo' />
         <Card
           href='/tailwind'
           imgSrc='/img/tailwind.svg'
-          layoutId={'tailwind-logo'}
+          layoutId='tailwind-logo'
         />
         <Card
           href='/framermotion'
           imgSrc='/img/framermotion.svg'
-          layoutId={'framermotion-logo'}
+          layoutId='framermotion-logo'
         />
       </div>
     </Layout>
